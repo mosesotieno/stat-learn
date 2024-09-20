@@ -1,0 +1,24 @@
+---
+title: "Common Statistical Definitions"
+author: "Moses Otieno"
+date: "2024-09-19"
+categories: [definitions, statistics]
+image: "../define.jpeg"
+bibliography: references.bib
+---
+
+Below are some common statistical definitions:
+
+-   Population: Any complete collection of observations or potential observations
+
+-   Sample: Any smaller collection of actual observation from the population
+
+-   Random Sampling: A procedure designed to ensure that each potential observation in the population has an equal chance of being selected in a survey
+
+-   Random Assignment: A procedure designed to ensure that each person has an equal chance of being assigned to any group in an experiment
+
+-   Homogeneity: Similarity among individuals within a population
+
+-   Parameter: A descriptive measure of the characteristics calculated on a population
+
+-   Sample statistic: A descriptive measure on a sample

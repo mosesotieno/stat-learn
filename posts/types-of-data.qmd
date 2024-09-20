@@ -1,0 +1,38 @@
+---
+title: "Types of Data"
+author: "Moses Otieno"
+date: "2024-09-19"
+categories: [definitions, statistics, data]
+image: "../data-types.jpeg"
+bibliography: references.bib
+---
+
+We have three types of data **qualitative**, **quantitative** and **ranked** data. Any statistical analysis is performed on data. The precise form of statistical analysis often depends on the type of data.
+
+## Qualitative Data
+
+A set of observations where any single observavation is a word, letter or numerical code that represents a category.
+
+## Ranked Data
+
+A set of observations where any single observation is a number that indicates relative standing.
+
+## Quantitative Data
+
+A set of observations where a single observation is a number that represents an amount or a count.
+
+Each type of data goes with a level of measurement. A level of measurement specifies the extent to which a number (or word or letter) actually represents some attribute and therefore, has implications for the appropriateness of various arithmetic and statistical procedures.
+
+| Data type    | Level of measurement | Property                  | Examples                      |
+|----------------|----------------|----------------|----------------------|
+| Qualitative  | Nominal              | Classification            | Gender (Male, Female)         |
+| Ranked       | Ordinal              | Order                     | Mean grade in KCSE (A, A- B+) |
+| Quantitative | Interval             | Equal intervals,True zero | Age, height, weight           |
+
+: Data type and levels of measurement
+
+-   Nominal Measurement: Words, letters, or numerical codes of qualitative data that reflect differences in kind based on classification.
+
+-   Ordinal Measurement: Relative standing of ranked data that reflects differences in degree based on order.
+
+-   Interval/Ration Measurement: Amounts or counts of quantitative data reflect differences in degree based on equal intervals and a true zero.

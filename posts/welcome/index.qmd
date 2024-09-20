@@ -1,0 +1,16 @@
+---
+title: "Welcome To My Blog"
+author: "Moses Otieno"
+date: "2024-09-18"
+categories: [news]
+---
+
+This blog is dedicated to exploring the world of statistics and everything related to it. As I delve deeper into the subject, I'll be sharing what I learn along the way---both to solidify my own understanding and to contribute to my professional growth.
+
+I recognize that learning statistics is a long journey, but I believe it's a worthwhile one. Through this blog, I'll document key concepts, insights, and discoveries I encounter throughout my learning process.
+
+Join me as I take this journey, breaking down complex statistical ideas and making them accessible for anyone eager to learn!
+
+![](thumbnail.jpg)
+
+.

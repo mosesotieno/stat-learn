@@ -1,0 +1,22 @@
+---
+title: "What is Statistics?"
+author: "Moses Otieno"
+date: "2024-09-18"
+categories: [news, code, statistics]
+image: "../what-is-it.jpeg"
+bibliography: references.bib
+---
+
+The following definitions fit well on the subject of Statistics. They are taken from different authors:
+
+-   Statistics is the art and science of collecting, presenting, and analyzing data to answer an investigative question. Its ultimate goal is translating data into knowledge and an understanding of the world around us. In short, statistics is the art and science of learning from data.
+
+-   The science of organizing and summarizing numerical or nonnumerical information.[@weissneila.2021]
+
+## Major Branches of Statistics
+
+There are two major branches of statistics:
+
+-   Descriptive Statistics: Concerned with organisation, summarization description of data.
+
+-   Inferential Statistics: Involves using sample data to generalize the population.
