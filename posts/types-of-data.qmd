@@ -24,7 +24,7 @@ A set of observations where a single observation is a number that represents an 
 Each type of data goes with a level of measurement. A level of measurement specifies the extent to which a number (or word or letter) actually represents some attribute and therefore, has implications for the appropriateness of various arithmetic and statistical procedures.
 
 | Data type    | Level of measurement | Property                  | Examples                      |
-|----------------|----------------|----------------|----------------------|
+|--------------|----------------------|---------------------------|-------------------------------|
 | Qualitative  | Nominal              | Classification            | Gender (Male, Female)         |
 | Ranked       | Ordinal              | Order                     | Mean grade in KCSE (A, A- B+) |
 | Quantitative | Interval             | Equal intervals,True zero | Age, height, weight           |

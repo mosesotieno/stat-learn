@@ -63,53 +63,18 @@
     "text": "Foundation for Data Science and Machine Learning\n\nCore to Data Science: Statistics is the backbone of data science, helping with everything from data collection, cleaning and exploration to building predictive models.\nMachine Learning Models: Many machine learning algorithms such linear regression, decision tress, and clustering have roots in statistical techniques. Understanding statistics enables a better grasp of how these models work and how to improve them."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/what-is-statistics.html",
+    "href": "posts/what-is-statistics.html",
+    "title": "What is Statistics?",
     "section": "",
-    "text": "This blog is dedicated to exploring the world of statistics and everything related to it. As I delve deeper into the subject, I’ll be sharing what I learn along the way—both to solidify my own understanding and to contribute to my professional growth.\nI recognize that learning statistics is a long journey, but I believe it’s a worthwhile one. Through this blog, I’ll document key concepts, insights, and discoveries I encounter throughout my learning process.\nJoin me as I take this journey, breaking down complex statistical ideas and making them accessible for anyone eager to learn!\n\n."
+    "text": "The following definitions fit well on the subject of Statistics. They are taken from different authors:"
   },
   {
-    "objectID": "posts/common-definitions.html",
-    "href": "posts/common-definitions.html",
-    "title": "Common Statistical Definitions",
-    "section": "",
-    "text": "Below are some common statistical definitions:\n\nPopulation: Any complete collection of observations or potential observations\nSample: Any smaller collection of actual observation from the population\nRandom Sampling: A procedure designed to ensure that each potential observation in the population has an equal chance of being selected in a survey\nRandom Assignment: A procedure designed to ensure that each person has an equal chance of being assigned to any group in an experiment\nHomogeneity: Similarity among individuals within a population\nParameter: A descriptive measure of the characteristics calculated on a population\nSample statistic: A descriptive measure on a sample"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to The Statistical Journey: Insights and Discoveries!\nI’m thrilled to embark on this exhilarating exploration into the realm of statistics, a field that intertwines rigor with discovery, theory with application. As an ardent learner and passionate advocate for data-driven decision-making, this blog is my dedicated space to unravel the complexities of statistics and share my journey with you."
-  },
-  {
-    "objectID": "about.html#why-statistics",
-    "href": "about.html#why-statistics",
-    "title": "About",
-    "section": "Why Statistics?",
-    "text": "Why Statistics?\nStatistics is the bedrock of empirical research and data analysis. It equips us with powerful tools to make sense of variability, assess relationships, and infer conclusions from data. From hypothesis testing and regression analysis to Bayesian inference and multivariate statistics, the breadth and depth of statistical methods are both challenging and profoundly rewarding."
-  },
-  {
-    "objectID": "about.html#what-to-expect",
-    "href": "about.html#what-to-expect",
-    "title": "About",
-    "section": "What to Expect",
-    "text": "What to Expect\nIn this blog, you’ll find:\n\nCore Statistical Concepts: I’ll demystify key concepts such as probability distributions, confidence intervals, p-values, and statistical significance. Each post will aim to clarify these terms and illustrate their practical applications.\nAdvanced Techniques: Explore sophisticated methods including time series analysis, factor analysis, and non-parametric statistics. Expect detailed explanations and practical examples that showcase these techniques in action.\nData Exploration and Visualization: Learn how to harness the power of exploratory data analysis (EDA) and visualization techniques to uncover insights and communicate findings effectively.\nReal-World Applications: See how statistical methods are employed across various fields, from medical research and economics to social sciences and technology.\nPersonal Discoveries: Follow along as I document my own discoveries, challenges, and breakthroughs in mastering the art and science of statistics."
-  },
-  {
-    "objectID": "about.html#my-journey",
-    "href": "about.html#my-journey",
-    "title": "About",
-    "section": "My Journey",
-    "text": "My Journey\nAs someone who is deeply committed to understanding and applying statistical principles, I am excited to share the process of my learning journey. Statistics is not just a set of tools; it’s a mindset—a way to approach problems analytically and make data-informed decisions.\nJoin me as I navigate through statistical theories, unravel complex data problems, and celebrate the eureka moments that come with learning. Whether you’re a fellow statistician, a data enthusiast, or someone curious about the power of numbers, I hope you’ll find this blog both enlightening and inspiring.\nThank you for being part of this statistical adventure!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Statistical Journey: Insights and Discoveries",
-    "section": "",
-    "text": "Common Statistical Definitions\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Data\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\ndata\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\nNo matching items"
+    "objectID": "posts/what-is-statistics.html#major-branches-of-statistics",
+    "href": "posts/what-is-statistics.html#major-branches-of-statistics",
+    "title": "What is Statistics?",
+    "section": "Major Branches of Statistics",
+    "text": "Major Branches of Statistics\nThere are two major branches of statistics:\n\nDescriptive Statistics: Concerned with organisation, summarization description of data.\nInferential Statistics: Involves using sample data to generalize the population."
   },
   {
     "objectID": "posts/types-of-data.html",
@@ -140,17 +105,80 @@
     "text": "Quantitative Data\nA set of observations where a single observation is a number that represents an amount or a count.\nEach type of data goes with a level of measurement. A level of measurement specifies the extent to which a number (or word or letter) actually represents some attribute and therefore, has implications for the appropriateness of various arithmetic and statistical procedures.\n\nData type and levels of measurement\n\n\n\n\n\n\n\n\nData type\nLevel of measurement\nProperty\nExamples\n\n\n\n\nQualitative\nNominal\nClassification\nGender (Male, Female)\n\n\nRanked\nOrdinal\nOrder\nMean grade in KCSE (A, A- B+)\n\n\nQuantitative\nInterval\nEqual intervals,True zero\nAge, height, weight\n\n\n\n\nNominal Measurement: Words, letters, or numerical codes of qualitative data that reflect differences in kind based on classification.\nOrdinal Measurement: Relative standing of ranked data that reflects differences in degree based on order.\nInterval/Ration Measurement: Amounts or counts of quantitative data reflect differences in degree based on equal intervals and a true zero."
   },
   {
-    "objectID": "posts/what-is-statistics.html",
-    "href": "posts/what-is-statistics.html",
-    "title": "What is Statistics?",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Statistical Journey: Insights and Discoveries",
     "section": "",
-    "text": "The following definitions fit well on the subject of Statistics. They are taken from different authors:"
+    "text": "Which regression method for binary outcome?\n\n\n\n\n\n\ncode\n\n\nstatistics\n\n\nregression\n\n\n\n\n\n\n\n\n\nMar 20, 2025\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nCommon Statistical Definitions\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Data\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\ndata\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/what-is-statistics.html#major-branches-of-statistics",
-    "href": "posts/what-is-statistics.html#major-branches-of-statistics",
-    "title": "What is Statistics?",
-    "section": "Major Branches of Statistics",
-    "text": "Major Branches of Statistics\nThere are two major branches of statistics:\n\nDescriptive Statistics: Concerned with organisation, summarization description of data.\nInferential Statistics: Involves using sample data to generalize the population."
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to The Statistical Journey: Insights and Discoveries!\nI’m thrilled to embark on this exhilarating exploration into the realm of statistics, a field that intertwines rigor with discovery, theory with application. As an ardent learner and passionate advocate for data-driven decision-making, this blog is my dedicated space to unravel the complexities of statistics and share my journey with you."
+  },
+  {
+    "objectID": "about.html#why-statistics",
+    "href": "about.html#why-statistics",
+    "title": "About",
+    "section": "Why Statistics?",
+    "text": "Why Statistics?\nStatistics is the bedrock of empirical research and data analysis. It equips us with powerful tools to make sense of variability, assess relationships, and infer conclusions from data. From hypothesis testing and regression analysis to Bayesian inference and multivariate statistics, the breadth and depth of statistical methods are both challenging and profoundly rewarding."
+  },
+  {
+    "objectID": "about.html#what-to-expect",
+    "href": "about.html#what-to-expect",
+    "title": "About",
+    "section": "What to Expect",
+    "text": "What to Expect\nIn this blog, you’ll find:\n\nCore Statistical Concepts: I’ll demystify key concepts such as probability distributions, confidence intervals, p-values, and statistical significance. Each post will aim to clarify these terms and illustrate their practical applications.\nAdvanced Techniques: Explore sophisticated methods including time series analysis, factor analysis, and non-parametric statistics. Expect detailed explanations and practical examples that showcase these techniques in action.\nData Exploration and Visualization: Learn how to harness the power of exploratory data analysis (EDA) and visualization techniques to uncover insights and communicate findings effectively.\nReal-World Applications: See how statistical methods are employed across various fields, from medical research and economics to social sciences and technology.\nPersonal Discoveries: Follow along as I document my own discoveries, challenges, and breakthroughs in mastering the art and science of statistics."
+  },
+  {
+    "objectID": "about.html#my-journey",
+    "href": "about.html#my-journey",
+    "title": "About",
+    "section": "My Journey",
+    "text": "My Journey\nAs someone who is deeply committed to understanding and applying statistical principles, I am excited to share the process of my learning journey. Statistics is not just a set of tools; it’s a mindset—a way to approach problems analytically and make data-informed decisions.\nJoin me as I navigate through statistical theories, unravel complex data problems, and celebrate the eureka moments that come with learning. Whether you’re a fellow statistician, a data enthusiast, or someone curious about the power of numbers, I hope you’ll find this blog both enlightening and inspiring.\nThank you for being part of this statistical adventure!"
+  },
+  {
+    "objectID": "posts/common-definitions.html",
+    "href": "posts/common-definitions.html",
+    "title": "Common Statistical Definitions",
+    "section": "",
+    "text": "Below are some common statistical definitions:\n\nPopulation: Any complete collection of observations or potential observations\nSample: Any smaller collection of actual observation from the population\nRandom Sampling: A procedure designed to ensure that each potential observation in the population has an equal chance of being selected in a survey\nRandom Assignment: A procedure designed to ensure that each person has an equal chance of being assigned to any group in an experiment\nHomogeneity: Similarity among individuals within a population\nParameter: A descriptive measure of the characteristics calculated on a population\nSample statistic: A descriptive measure on a sample"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This blog is dedicated to exploring the world of statistics and everything related to it. As I delve deeper into the subject, I’ll be sharing what I learn along the way—both to solidify my own understanding and to contribute to my professional growth.\nI recognize that learning statistics is a long journey, but I believe it’s a worthwhile one. Through this blog, I’ll document key concepts, insights, and discoveries I encounter throughout my learning process.\nJoin me as I take this journey, breaking down complex statistical ideas and making them accessible for anyone eager to learn!\n\n."
+  },
+  {
+    "objectID": "posts/which-regression-for-binary.html",
+    "href": "posts/which-regression-for-binary.html",
+    "title": "Which regression method for binary outcome?",
+    "section": "",
+    "text": "# Load necessary packages\nlibrary(dplyr)\nlibrary(sandwich)\nlibrary(lmtest)\nlibrary(gtsummary)\nlibrary(flextable)\n# Set seed for reproducibility\nset.seed(123)\n\n# Simulated dataset (350 individuals)\n\nearly_sex &lt;- data.frame(\n  early_sexual_debut = rbinom(350, 1, 0.3),  # Binary outcome (30% prevalence)\n  exposed = rbinom(350, 1, 0.5),  # 50% exposed\n  age = sample(18:30, 350, replace = TRUE),  # Age range 18-30\n  education = factor(sample(c(\"None\", \"Primary\", \"Secondary\", \"Higher\"), 350, replace = TRUE), labels = c(\"None\", \"Primary\", \"Secondary\", \"Higher\")),\n  gender = factor(rbinom(350, 1, 0.4), labels = c(\"Male\", \"Female\"))\n)"
+  },
+  {
+    "objectID": "posts/which-regression-for-binary.html#logistic-regression-the-default-choice",
+    "href": "posts/which-regression-for-binary.html#logistic-regression-the-default-choice",
+    "title": "Which regression method for binary outcome?",
+    "section": "1. Logistic Regression: The Default Choice?",
+    "text": "1. Logistic Regression: The Default Choice?\nLogistic regression is often the first choice for binary outcomes because it models the log odds of an event occurring. It estimates odds ratios (ORs), which tell us how much more or less likely an event is in one group compared to another.\n\nWhen to use: Logistic regression is ideal when the outcome is rare (&lt;10%).\nWhy? Odds ratios approximate relative risks well in rare events but become misleading when outcomes are common.\n\nWe will explore both univariable and multivariable regression\n\nwaldci &lt;- function(x, exponentiate =  TRUE, conf.level = 0.95, ...) {\n  dplyr::bind_cols(\n    broom::tidy(x, exponentiate = exponentiate, conf.int = FALSE),\n    # calculate the confidence intervals, and save them in a tibble\n    exp(stats::confint.default(x)) %&gt;%\n      tibble::as_tibble() %&gt;%\n      rlang::set_names(c(\"conf.low\", \"conf.high\"))  )\n}\n\n\nmvariable.regress &lt;- function(covariates, modeltype=\"logistic\") {\n  \n  form &lt;- paste(\"early_sexual_debut\", \"~\",\n                paste(covariates, collapse = \" + \"))\n  \n  if (modeltype == \"logistic\"){\n    model &lt;- glm(as.formula(form),\n      data = early_sex, family = binomial(link = \"logit\"))\n    est &lt;- \"**adjusted OR**\"\n  } else if (modeltype == \"logbinomial\"){\n    model &lt;- glm(as.formula(form),\n      data = early_sex, family = binomial(link = \"log\"))\n    est &lt;- \"**adjusted PR**\"\n  } else if (modeltype == \"modifiedpoisson\"){\n    model &lt;- glm(as.formula(form),\n      data = early_sex, family = poisson(link = \"log\"))\n    est &lt;- \"**adjusted PR**\"\n  }\n  \n   \n  \n\n  \n  \n  \n model  %&gt;% \n    tbl_regression(tidy_fun = waldci,\n    exponentiate = TRUE\n  ) %&gt;%\n  bold_p() %&gt;%\n  bold_p(t = 0.05) %&gt;%\n  bold_labels() %&gt;% \n  modify_header(label = \"**Variable**\",\n                estimate = est) %&gt;% \n  modify_table_styling(\n    columns = c(\"ci\", \"estimate\"),\n    rows = reference_row %in% TRUE,\n    missing_symbol = \"Ref\"\n  ) \n  \n\n}\n\n\nUnivariable Logistic Regression\n\nvars &lt;- c(\"exposed\", \"age\", \"gender\",\"education\")\n\nlogit1 &lt;- early_sex |&gt; \n  select(all_of(vars), early_sexual_debut) %&gt;%\n    tbl_uvregression(tidy_fun = waldci,\n      method = glm,\n      y = early_sexual_debut,\n      method.args = list(family = binomial(link = \"logit\")),\n      exponentiate = TRUE,\n      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %&gt;% \n    bold_p() %&gt;%\n    bold_p(t = 0.05) %&gt;%\n    bold_labels() %&gt;% \n    modify_header(label = \"**Variable**\",\n                  estimate = \"**unadjusted OR**\") %&gt;% \n    modify_table_styling(\n      columns = c(\"ci\", \"estimate\"),\n      rows = reference_row %in% TRUE,\n      missing_symbol = \"Ref\")   %&gt;% \n  modify_column_hide(stat_n) \n\nlogit1 |&gt; \n  as_flex_table() %&gt;%\n  font(fontname = \"Calibri\", part = \"all\") %&gt;%\n  autofit() %&gt;%\n  padding(padding = 1, part = \"all\") %&gt;%\n  fontsize(size = 10)\n\nVariableunadjusted OR195% CI1p-valueexposed1.170.73, 1.860.51age1.020.96, 1.090.46genderMaleRef—Female0.860.53, 1.370.52educationNoneRef—Primary0.830.43, 1.630.59Secondary0.820.42, 1.620.57Higher0.940.50, 1.790.861OR = Odds Ratio, CI = Confidence Interval\n\n\n\n\nMultivariable Logistic Regression\n\nlogitmodel &lt;- mvariable.regress(vars)\nlogitmodel\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariable\nadjusted OR1\n95% CI1\np-value\n\n\n\n\nexposed\n1.15\n0.72, 1.85\n0.6\n\n\nage\n1.02\n0.96, 1.09\n0.5\n\n\ngender\n\n\n\n\n\n\n\n\n    Male\nRef\n—\n\n\n\n\n    Female\n0.83\n0.52, 1.34\n0.4\n\n\neducation\n\n\n\n\n\n\n\n\n    None\nRef\n—\n\n\n\n\n    Primary\n0.82\n0.42, 1.60\n0.6\n\n\n    Secondary\n0.80\n0.40, 1.58\n0.5\n\n\n    Higher\n0.94\n0.49, 1.78\n0.8\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval"
+  },
+  {
+    "objectID": "posts/which-regression-for-binary.html#log-binomial-regression-directly-estimating-prevalence-ratios-prs",
+    "href": "posts/which-regression-for-binary.html#log-binomial-regression-directly-estimating-prevalence-ratios-prs",
+    "title": "Which regression method for binary outcome?",
+    "section": "2. Log-Binomial Regression: Directly Estimating Prevalence Ratios (PRs)",
+    "text": "2. Log-Binomial Regression: Directly Estimating Prevalence Ratios (PRs)\nThe log-binomial model is an alternative when we want to estimate prevalence ratios (PRs) directly. Unlike logistic regression, which estimates odds, log-binomial regression models probability, making the interpretation more intuitive.\n\nWhen to use: Suitable for cross-sectional studies where the outcome prevalence is not rare.\nLimitation: This model sometimes fails to converge, making computation tricky.\n\n\nUnivariable Log Binomial Regression\n\nlogbinmodel1 &lt;- early_sex |&gt; \n  select(all_of(vars), early_sexual_debut) %&gt;%\n    tbl_uvregression(tidy_fun = waldci,\n      method = glm,\n      y = early_sexual_debut,\n      method.args = list(family = binomial(link = \"log\")),\n      exponentiate = TRUE,\n      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %&gt;% \n    bold_p() %&gt;%\n    bold_p(t = 0.05) %&gt;%\n    bold_labels() %&gt;% \n    modify_header(label = \"**Variable**\",\n                  estimate = \"**PR**\") %&gt;% \n    modify_table_styling(\n      columns = c(\"conf.low\", \"estimate\"),\n      rows = reference_row %in% TRUE,\n      missing_symbol = \"Ref\")   %&gt;% \n    modify_column_hide(stat_n)\n\n\nlogbinmodel1 |&gt; \n  as_flex_table() %&gt;%\n  font(fontname = \"Calibri\", part = \"all\") %&gt;%\n  autofit() %&gt;%\n  padding(padding = 1, part = \"all\") %&gt;%\n  fontsize(size = 10)\n\nVariablePR195% CI1p-valueexposed1.120.80, 1.560.51age1.020.97, 1.070.45genderMaleRefRefFemale0.890.64, 1.260.52educationNoneRefRefPrimary0.880.54, 1.420.59Secondary0.870.54, 1.410.57Higher0.960.61, 1.500.861RR = Relative Risk, CI = Confidence Interval\n\n\n\n\nMultivariable Log Binomial Regression\n\nlogbinmodel &lt;- mvariable.regress(vars, \"logbinomial\")"
+  },
+  {
+    "objectID": "posts/which-regression-for-binary.html#modified-poisson-regression-a-practical-alternative-for-prs",
+    "href": "posts/which-regression-for-binary.html#modified-poisson-regression-a-practical-alternative-for-prs",
+    "title": "Which regression method for binary outcome?",
+    "section": "3. Modified Poisson Regression: A Practical Alternative for PRs",
+    "text": "3. Modified Poisson Regression: A Practical Alternative for PRs\nTo address convergence issues with log-binomial regression, modified Poisson regression is commonly used. This approach uses Poisson regression with robust standard errors to estimate PRs correctly.\n\nWhen to use: When the outcome is common (&gt;10%) and PRs are preferred over ORs.\nAdvantage: More stable and easier to compute than log-binomial regression.\n\n\n\nStandard Poisson regression assumes variance = mean (which often isn’t true).\n\n\n\nThe sandwich estimator corrects for overdispersion and provides valid confidence intervals for Prevalence Ratios\nWithout robust SEs, confidence intervals may be too narrow.\n\n\n\nWith robust SEs (sandwich estimator), we get valid PR estimates.\n\n\nUnivariable Modified Poisson Regression\n\npoissonmod1 &lt;- early_sex |&gt; \n  select(all_of(vars), early_sexual_debut) %&gt;%\n    tbl_uvregression(tidy_fun = waldci,\n      method = glm,\n      y = early_sexual_debut,\n      method.args = list(family = poisson(link = \"log\")),\n      exponentiate = TRUE,\n      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %&gt;% \n    bold_p() %&gt;%\n    bold_p(t = 0.05) %&gt;%\n    bold_labels() %&gt;% \n    modify_header(label = \"**Variable**\",\n                  estimate = \"**PR**\") %&gt;% \n    modify_table_styling(\n      columns = c(\"conf.low\", \"estimate\"),\n      rows = reference_row %in% TRUE,\n      missing_symbol = \"Ref\")   %&gt;% \n    modify_column_hide(stat_n)\n\n\n\npoissonmod1 |&gt; \n  as_flex_table() %&gt;%\n  font(fontname = \"Calibri\", part = \"all\") %&gt;%\n  autofit() %&gt;%\n  padding(padding = 1, part = \"all\") %&gt;%\n  fontsize(size = 10)\n\nVariablePR195% CI1p-valueexposed1.120.75, 1.660.58age1.020.96, 1.070.53genderMaleRefRefFemale0.890.60, 1.330.58educationNoneRefRefPrimary0.880.50, 1.550.65Secondary0.870.49, 1.540.63Higher0.960.56, 1.640.881IRR = Incidence Rate Ratio, CI = Confidence Interval\n\n\n\n\nMultivariable Modified Poisson Regression\n\npoismodmodel &lt;- mvariable.regress(vars, \"modifiedpoisson\")\n\n\n\n\nBring the three models together\n\ntbl_merge(tbls = list(logitmodel, logbinmodel, poismodmodel), \n          tab_spanner = c(\"**Logistic Regression**\", \"**Log-Binomial Regression**\", \"**Modified Poisson Regressin**\")) |&gt; \n  as_flex_table() %&gt;%\n  font(fontname = \"Calibri\", part = \"all\") %&gt;%\n  autofit() %&gt;%\n  padding(padding = 1, part = \"all\") %&gt;%\n  fontsize(size = 10)\n\n Logistic RegressionLog-Binomial RegressionModified Poisson RegressinVariableadjusted OR195% CI1p-valueadjusted PR195% CI1p-valueadjusted PR195% CI1p-valueexposed1.150.72, 1.850.61.100.79, 1.550.61.110.74, 1.650.6age1.020.96, 1.090.51.020.97, 1.070.51.020.96, 1.070.6genderMaleRef—Ref—Ref—Female0.830.52, 1.340.40.880.63, 1.240.50.880.58, 1.310.5educationNoneRef—Ref—Ref—Primary0.820.42, 1.600.60.870.54, 1.410.60.870.49, 1.530.6Secondary0.800.40, 1.580.50.860.53, 1.400.50.850.48, 1.510.6Higher0.940.49, 1.780.80.970.62, 1.52&gt;0.90.960.56, 1.630.91OR = Odds Ratio, CI = Confidence Interval, RR = Relative Risk, IRR = Incidence Rate Ratio\n\n\n\n\nFinal Thoughts\nUnderstanding when to use ORs, PRs, or RRs can significantly impact how we interpret study results. While logistic regression remains the standard, recognizing when to use log-binomial or modified Poisson regression ensures we report measures that align with study goals and accurately reflect risk or prevalence."
   }
 ]
