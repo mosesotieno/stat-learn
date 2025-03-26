@@ -83,7 +83,8 @@ univariable.regress <- function(covariates, modeltype="logistic") {
       y = early_sexual_debut,
       method.args = list(family = binomial(link = "logit")),
       exponentiate = TRUE,
-      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %>% 
+      modify_column_hide(stat_n)
     
     
     est <- "**OR**"
@@ -95,7 +96,8 @@ univariable.regress <- function(covariates, modeltype="logistic") {
       y = early_sexual_debut,
       method.args = list(family = binomial(link = "log")),
       exponentiate = TRUE,
-      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %>% 
+      modify_column_hide(stat_n)
     
     est <- "**PR**"
   } else if (modeltype == "modifiedpoisson"){
@@ -106,7 +108,8 @@ univariable.regress <- function(covariates, modeltype="logistic") {
       y = early_sexual_debut,
       method.args = list(family = poisson(link = "log")),
       exponentiate = TRUE,
-      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+      pvalue_fun = function(x) style_pvalue(x, digits = 2)) %>% 
+      modify_column_hide(stat_n)
     est <- "**PR**"
   }
   
@@ -167,8 +170,7 @@ mvariable.regress <- function(covariates, modeltype="logistic") {
   modify_table_styling(
     columns = c("conf.low", "estimate"),
     rows = reference_row %in% TRUE,
-    missing_symbol = "Ref") %>% 
-    modify_column_hide(stat_n)
+    missing_symbol = "Ref") 
   
 
 }
