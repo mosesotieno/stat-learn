@@ -1,0 +1,280 @@
+---
+title: "Which regression method for binary outcome?"
+author: "Moses Otieno"
+date: "2025-03-20"
+categories: [code, statistics, regression]
+image: "../which-method.jpg"
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set( message = FALSE, ft.align = "left", warning = FALSE)
+options(gtsummary.tbl_summary.percent_fun = 
+          function(x) sprintf(x * 100, fmt='%#.1f'))
+```
+
+```{r packages}
+
+# Load necessary packages
+library(dplyr)
+library(sandwich)
+library(lmtest)
+library(gtsummary)
+library(flextable)
+```
+
+```{r data}
+
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Simulated dataset (350 individuals)
+
+early_sex <- data.frame(
+  early_sexual_debut = rbinom(350, 1, 0.3),  # Binary outcome (30% prevalence)
+  exposed = rbinom(350, 1, 0.5),  # 50% exposed
+  age = sample(18:30, 350, replace = TRUE),  # Age range 18-30
+  education = factor(sample(c("None", "Primary", "Secondary", "Higher"), 350, replace = TRUE), labels = c("None", "Primary", "Secondary", "Higher")),
+  gender = factor(rbinom(350, 1, 0.4), labels = c("Male", "Female"))
+)
+```
+
+# Introduction
+
+When analyzing binary outcomes, the go-to method for many is logistic regression, which produces odds ratios (ORs). But is that always the best choice? Should we pause and consider whether an alternative approach might be more appropriate?
+
+The key to selecting the right statistical model lies in understanding not just the binary nature of the outcome but also the study design and the prevalence of the event. While logistic regression is widely used, it isn't always the best fit---especially when we are interested in prevalence rather than odds. This is where alternative models like log-binomial regression and modified Poisson regression come into play, offering prevalence ratios (PRs) instead of odds ratios.
+
+So, when should you use ORs, and when do PRs or relative risks (RRs) provide a clearer interpretation? Let's dive in.
+
+## **1. Logistic Regression: The Default Choice?**
+
+Logistic regression is often the first choice for binary outcomes because it models the log odds of an event occurring. It estimates **odds ratios (ORs)**, which tell us how much more or less likely an event is in one group compared to another.
+
+-   **When to use:** Logistic regression is ideal when the outcome is rare (\<10%).
+
+-   **Why?** Odds ratios approximate relative risks well in rare events but become misleading when outcomes are common.
+
+We will explore both univariable and multivariable regression
+
+```{r functions}
+waldci <- function(x, exponentiate =  TRUE, conf.level = 0.95, ...) {
+  dplyr::bind_cols(
+    broom::tidy(x, exponentiate = exponentiate, conf.int = FALSE),
+    # calculate the confidence intervals, and save them in a tibble
+    exp(stats::confint.default(x)) %>%
+      tibble::as_tibble() %>%
+      rlang::set_names(c("conf.low", "conf.high"))  )
+}
+
+
+univariable.regress <- function(covariates, modeltype="logistic") {
+  
+  form <- paste("early_sexual_debut", "~",
+                paste(covariates, collapse = " + "))
+  
+  if (modeltype == "logistic"){
+    
+    model <- early_sex |> 
+      select(all_of(vars), early_sexual_debut) %>%
+      tbl_uvregression(tidy_fun = waldci,
+      method = glm,
+      y = early_sexual_debut,
+      method.args = list(family = binomial(link = "logit")),
+      exponentiate = TRUE,
+      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+    
+    
+    est <- "**OR**"
+  } else if (modeltype == "logbinomial"){
+    model <- early_sex |> 
+      select(all_of(vars), early_sexual_debut) %>%
+      tbl_uvregression(tidy_fun = waldci,
+      method = glm,
+      y = early_sexual_debut,
+      method.args = list(family = binomial(link = "log")),
+      exponentiate = TRUE,
+      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+    
+    est <- "**PR**"
+  } else if (modeltype == "modifiedpoisson"){
+    model <- early_sex |> 
+      select(all_of(vars), early_sexual_debut) %>%
+      tbl_uvregression(tidy_fun = waldci,
+      method = glm,
+      y = early_sexual_debut,
+      method.args = list(family = poisson(link = "log")),
+      exponentiate = TRUE,
+      pvalue_fun = function(x) style_pvalue(x, digits = 2))
+    est <- "**PR**"
+  }
+  
+   
+  
+ model  |> 
+  bold_p() %>%
+  bold_p(t = 0.05) %>%
+  bold_labels() %>% 
+  modify_header(label = "**Variable**",
+                estimate = est) %>% 
+  modify_table_styling(
+    columns = c("conf.low", "estimate"),
+    rows = reference_row %in% TRUE,
+    missing_symbol = "Ref"
+  ) |> 
+  as_flex_table() %>%
+  font(fontname = "Calibri", part = "all") %>%
+  autofit() %>%
+  padding(padding = 1, part = "all") %>%
+  fontsize(size = 10)
+  
+
+}
+
+
+
+mvariable.regress <- function(covariates, modeltype="logistic") {
+  
+  form <- paste("early_sexual_debut", "~",
+                paste(covariates, collapse = " + "))
+  
+  if (modeltype == "logistic"){
+    model <- glm(as.formula(form),
+      data = early_sex, family = binomial(link = "logit"))
+    est <- "**adjusted OR**"
+  } else if (modeltype == "logbinomial"){
+    model <- glm(as.formula(form),
+      data = early_sex, family = binomial(link = "log"))
+    est <- "**adjusted PR**"
+  } else if (modeltype == "modifiedpoisson"){
+    model <- glm(as.formula(form),
+      data = early_sex, family = poisson(link = "log"))
+    est <- "**adjusted PR**"
+  }
+  
+   
+  
+ model  %>% 
+    tbl_regression(tidy_fun = waldci,
+    exponentiate = TRUE
+  ) %>%
+  bold_p() %>%
+  bold_p(t = 0.05) %>%
+  bold_labels() %>% 
+  modify_header(label = "**Variable**",
+                estimate = est) %>% 
+  modify_table_styling(
+    columns = c("conf.low", "estimate"),
+    rows = reference_row %in% TRUE,
+    missing_symbol = "Ref") %>% 
+    modify_column_hide(stat_n)
+  
+
+}
+
+```
+
+### Univariable Logistic Regression
+
+```{r logit1}
+
+vars <- c("exposed", "age", "gender","education")
+
+univariable.regress("logit")
+  
+
+```
+
+### Multivariable Logistic Regression
+
+```{r logit2}
+
+logitmodel <- mvariable.regress(vars)
+
+
+```
+
+------------------------------------------------------------------------
+
+## **2. Log-Binomial Regression: Directly Estimating Prevalence Ratios (PRs)**
+
+The log-binomial model is an alternative when we want to estimate **prevalence ratios (PRs)** directly. Unlike logistic regression, which estimates odds, log-binomial regression models probability, making the interpretation more intuitive.
+
+-   **When to use:** Suitable for cross-sectional studies where the outcome prevalence is not rare.
+
+-   **Limitation:** This model sometimes fails to converge, making computation tricky.
+
+### Univariable Log Binomial Regression
+
+```{r logbin1}
+
+
+univariable.regress("logbinomial")
+
+```
+
+### Multivariable Log Binomial Regression
+
+```{r logbin2}
+logbinmodel <- mvariable.regress(vars, "logbinomial")
+ 
+```
+
+------------------------------------------------------------------------
+
+## **3. Modified Poisson Regression: A Practical Alternative for PRs**
+
+To address convergence issues with log-binomial regression, **modified Poisson regression** is commonly used. This approach uses Poisson regression with robust standard errors to estimate PRs correctly.
+
+-   **When to use:** When the outcome is common (\>10%) and PRs are preferred over ORs.
+
+-   **Advantage:** More stable and easier to compute than log-binomial regression.
+
+-   **Standard Poisson regression assumes variance = mean** (which often isn't true)
+
+-   The **sandwich estimator corrects for overdispersion** and provides **valid confidence intervals** for Prevalence Ratios
+
+-   **Without robust SEs**, confidence intervals may be **too narrow**.
+
+-   **With robust SEs (sandwich estimator)**, we get **valid PR estimates**.
+
+### Univariable Modified Poisson Regression
+
+```{r poisson1}
+
+univariable.regress("modifiedpoisson")
+```
+
+### Multivariable Modified Poisson Regression
+
+```{r poisson2}
+
+poismodmodel <- mvariable.regress(vars, "modifiedpoisson")
+
+```
+
+------------------------------------------------------------------------
+
+### Bring the three models together
+
+```{r mergetbls}
+tbl_merge(tbls = list(logitmodel, logbinmodel, poismodmodel), 
+          tab_spanner = c("**Logistic Regression**", "**Log-Binomial Regression**", "**Modified Poisson Regressin**")) |> 
+  as_flex_table() %>%
+  font(fontname = "Calibri", part = "all") %>%
+  autofit() %>%
+  padding(padding = 1, part = "all") %>%
+  fontsize(size = 10)
+
+```
+
+### **Final Thoughts**
+
+Understanding when to use ORs, PRs, or RRs can significantly impact how we interpret study results. While logistic regression remains the standard, recognizing when to use log-binomial or modified Poisson regression ensures we report measures that align with study goals and accurately reflect risk or prevalence.
+
+### Conclusion
+
+I conclude with what Louise-Anne McNutt [@mcnutt2003] had to say:\
+
+> The use of an adjusted odds ratio to estimate an adjusted relative risk is appropriate for studies of rare outcomes, however, may be misleading when the outcome is common. The overestimation may inappropriately affect clinical decision-making or policy development. Additionally, overestimation of the importance of a risk factor may lead to unintentional errors in the economic analysis of potential intervention programs or treatments. Options exist to obtain unbiased estimates of relative risks in studies of common outcomes. Two methods that have widely available user-friendly software and often are statistically appropriate (e.g., fit the data) include stratified analysis and log-binomial modeling.
