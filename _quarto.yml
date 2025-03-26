@@ -6,6 +6,10 @@ website:
   navbar:
     right:
       - about.qmd
+      - text: "Take home"
+        href: https://takehomes.netlify.app/
+      - text: "Books Corner"
+        href: https://bsreads.netlify.app/
       - icon: github
         href: https://github.com/
       - icon: twitter
