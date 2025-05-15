@@ -105,11 +105,11 @@
     "text": "Quantitative Data\nA set of observations where a single observation is a number that represents an amount or a count.\nEach type of data goes with a level of measurement. A level of measurement specifies the extent to which a number (or word or letter) actually represents some attribute and therefore, has implications for the appropriateness of various arithmetic and statistical procedures.\n\nData type and levels of measurement\n\n\n\n\n\n\n\n\nData type\nLevel of measurement\nProperty\nExamples\n\n\n\n\nQualitative\nNominal\nClassification\nGender (Male, Female)\n\n\nRanked\nOrdinal\nOrder\nMean grade in KCSE (A, A- B+)\n\n\nQuantitative\nInterval\nEqual intervals,True zero\nAge, height, weight\n\n\n\n\nNominal Measurement: Words, letters, or numerical codes of qualitative data that reflect differences in kind based on classification.\nOrdinal Measurement: Relative standing of ranked data that reflects differences in degree based on order.\nInterval/Ration Measurement: Amounts or counts of quantitative data reflect differences in degree based on equal intervals and a true zero."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Statistical Journey: Insights and Discoveries",
+    "objectID": "posts/common-definitions.html",
+    "href": "posts/common-definitions.html",
+    "title": "Common Statistical Definitions",
     "section": "",
-    "text": "Which regression method for binary outcome?\n\n\n\n\n\n\ncode\n\n\nstatistics\n\n\nregression\n\n\n\n\n\n\n\n\n\nMar 20, 2025\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nCommon Statistical Definitions\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Data\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\ndata\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are some common statistical definitions:\n\nPopulation: Any complete collection of observations or potential observations\nSample: Any smaller collection of actual observation from the population\nRandom Sampling: A procedure designed to ensure that each potential observation in the population has an equal chance of being selected in a survey\nRandom Assignment: A procedure designed to ensure that each person has an equal chance of being assigned to any group in an experiment\nHomogeneity: Similarity among individuals within a population\nParameter: A descriptive measure of the characteristics calculated on a population\nSample statistic: A descriptive measure on a sample"
   },
   {
     "objectID": "about.html",
@@ -140,11 +140,67 @@
     "text": "My Journey\nAs someone who is deeply committed to understanding and applying statistical principles, I am excited to share the process of my learning journey. Statistics is not just a set of tools; it’s a mindset—a way to approach problems analytically and make data-informed decisions.\nJoin me as I navigate through statistical theories, unravel complex data problems, and celebrate the eureka moments that come with learning. Whether you’re a fellow statistician, a data enthusiast, or someone curious about the power of numbers, I hope you’ll find this blog both enlightening and inspiring.\nThank you for being part of this statistical adventure!"
   },
   {
-    "objectID": "posts/common-definitions.html",
-    "href": "posts/common-definitions.html",
-    "title": "Common Statistical Definitions",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Statistical Journey: Insights and Discoveries",
     "section": "",
-    "text": "Below are some common statistical definitions:\n\nPopulation: Any complete collection of observations or potential observations\nSample: Any smaller collection of actual observation from the population\nRandom Sampling: A procedure designed to ensure that each potential observation in the population has an equal chance of being selected in a survey\nRandom Assignment: A procedure designed to ensure that each person has an equal chance of being assigned to any group in an experiment\nHomogeneity: Similarity among individuals within a population\nParameter: A descriptive measure of the characteristics calculated on a population\nSample statistic: A descriptive measure on a sample"
+    "text": "Understanding Normal Distribution in R\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\nMoses\n\n\n\n\n\n\n\n\n\n\n\n\nWhich regression method for binary outcome?\n\n\n\n\n\n\ncode\n\n\nstatistics\n\n\nregression\n\n\n\n\n\n\n\n\n\nMar 20, 2025\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nCommon Statistical Definitions\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Data\n\n\n\n\n\n\ndefinitions\n\n\nstatistics\n\n\ndata\n\n\n\n\n\n\n\n\n\nSep 19, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Statistics?\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 18, 2024\n\n\nMoses Otieno\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html",
+    "href": "posts/solve-normal-dist-problems.html",
+    "title": "Understanding Normal Distribution in R",
+    "section": "",
+    "text": "This tutorial provides a comprehensive, easy-to-follow guide on using R to solve problems involving the normal distribution. You’ll learn how to:\n\nUnderstand what a normal distribution is\nConvert between raw scores and Z-scores\nUse pnorm() and qnorm() functions in R\nFind probabilities and percentiles\nApply these tools to real-world scenarios"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#introduction",
+    "href": "posts/solve-normal-dist-problems.html#introduction",
+    "title": "Understanding Normal Distribution in R",
+    "section": "",
+    "text": "This tutorial provides a comprehensive, easy-to-follow guide on using R to solve problems involving the normal distribution. You’ll learn how to:\n\nUnderstand what a normal distribution is\nConvert between raw scores and Z-scores\nUse pnorm() and qnorm() functions in R\nFind probabilities and percentiles\nApply these tools to real-world scenarios"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#what-is-the-normal-distribution",
+    "href": "posts/solve-normal-dist-problems.html#what-is-the-normal-distribution",
+    "title": "Understanding Normal Distribution in R",
+    "section": "📊 What is the Normal Distribution?",
+    "text": "📊 What is the Normal Distribution?\nA normal distribution is a bell-shaped, symmetric distribution centered at the mean (μ) and defined by the standard deviation (σ).\n\nKey Properties:\n\nAbout 68% of values lie within ±1σ of the mean\nAbout 95% within ±2σ\nAbout 99.7% within ±3σ\n\n\n# Visualizing a standard normal distribution\nx &lt;- seq(-4, 4, length = 1000)\ny &lt;- dnorm(x)\n\nplot(x, y, type = \"l\", lwd = 2, col = \"blue\",\n     main = \"Standard Normal Distribution\",\n     xlab = \"Z-score\", ylab = \"Density\")\nabline(v = 0, col = \"black\")\nabline(v = c(-1, 1), col = \"gray\", lty = 2)\nabline(v = c(-2, 2), col = \"gray\", lty = 2)\nabline(v = c(-3, 3), col = \"gray\", lty = 2)"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#z-scores",
+    "href": "posts/solve-normal-dist-problems.html#z-scores",
+    "title": "Understanding Normal Distribution in R",
+    "section": "🧠 Z-Scores",
+    "text": "🧠 Z-Scores\nA Z-score tells us how many standard deviations a value is from the mean:\n\\[\nz = \\frac{x - \\mu}{\\sigma}\n\\]\n\nPositive z → above the mean\nNegative z → below the mean"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#using-pnorm-in-r",
+    "href": "posts/solve-normal-dist-problems.html#using-pnorm-in-r",
+    "title": "Understanding Normal Distribution in R",
+    "section": "📈 Using pnorm() in R",
+    "text": "📈 Using pnorm() in R\npnorm() gives the probability to the left of a given value:\npnorm(q, mean = μ, sd = σ, lower.tail = TRUE)\n\nExamples:\n\n1. P(X &lt; 78), where μ = 70, σ = 6\n\npnorm(78, mean = 70, sd = 6)  # ≈ 0.9082\n\n[1] 0.9087888\n\n\n\n\n2. P(X &gt; 140), where μ = 120, σ = 10\n\n1 - pnorm(140, mean = 120, sd = 10)  # ≈ 0.0228\n\n[1] 0.02275013\n\n\n\n\n3. P(110 &lt; X &lt; 135), μ = 120, σ = 10\n\npnorm(135, 120, 10) - pnorm(110, 120, 10)  # ≈ 0.7745\n\n[1] 0.7745375"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#using-qnorm-in-r",
+    "href": "posts/solve-normal-dist-problems.html#using-qnorm-in-r",
+    "title": "Understanding Normal Distribution in R",
+    "section": "🔁 Using qnorm() in R",
+    "text": "🔁 Using qnorm() in R\nqnorm() gives the cutoff value (X) for a given cumulative probability:\nqnorm(p, mean = μ, sd = σ, lower.tail = TRUE)\n\nExamples:\n\n1. What score corresponds to the 90th percentile (μ = 500, σ = 100)?\n\nqnorm(0.9, mean = 500, sd = 100)  # ≈ 628.16\n\n[1] 628.1552\n\n\n\n\n2. What is the cutoff for the fastest 10% of reaction times (μ = 250, σ = 30)?\n\nqnorm(0.10, mean = 250, sd = 30)  # ≈ 211.55\n\n[1] 211.5535"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#practice-problems-with-solutions-and-visualizations",
+    "href": "posts/solve-normal-dist-problems.html#practice-problems-with-solutions-and-visualizations",
+    "title": "Understanding Normal Distribution in R",
+    "section": "🧪 Practice Problems with Solutions and Visualizations",
+    "text": "🧪 Practice Problems with Solutions and Visualizations\n\nProblem 1: Proportion below a score\nA test has μ = 70, σ = 6. What proportion scores below 78?\n\n\nShow Answer\npnorm(78, 70, 6)  # ≈ 0.9082\n\n# Visualize\ncurve(dnorm(x, mean = 70, sd = 6), from = 40, to = 100, lwd = 2, col = \"blue\",\n      ylab = \"Density\", main = \"P(X &lt; 78), μ = 70, σ = 6\")\npolygon(c(40, seq(40, 78, length.out=100), 78),\n        c(0, dnorm(seq(40, 78, length.out=100), 70, 6), 0),\n        col = \"skyblue\")\n\n\n\n\nProblem 2: Between two scores\nSystolic BP: μ = 120, σ = 10. Find the proportion between 110 and 135.\n\n\nShow Answer\npnorm(135, 120, 10) - pnorm(110, 120, 10)  # ≈ 0.7745\n\n# Visualize\ncurve(dnorm(x, mean = 120, sd = 10), from = 80, to = 160, lwd = 2, col = \"blue\",\n      ylab = \"Density\", main = \"P(110 &lt; X &lt; 135), μ = 120, σ = 10\")\npolygon(c(110, seq(110, 135, length.out=100), 135),\n        c(0, dnorm(seq(110, 135, length.out=100), 120, 10), 0),\n        col = \"skyblue\")\n\n\n\n\nProblem 3: Fastest 10% (lowest tail)\nFind the score that cuts off the fastest 10% for a test with μ = 250, σ = 30.\n\n\nShow Answer\nqnorm(0.10, 250, 30)  # ≈ 211.55\n\n# Visualize\ncurve(dnorm(x, mean = 250, sd = 30), from = 150, to = 350, lwd = 2, col = \"blue\",\n      ylab = \"Density\", main = \"Fastest 10% (X &lt; 211.55), μ = 250, σ = 30\")\npolygon(c(150, seq(150, 211.55, length.out=100), 211.55),\n        c(0, dnorm(seq(150, 211.55, length.out=100), 250, 30), 0),\n        col = \"skyblue\")"
+  },
+  {
+    "objectID": "posts/solve-normal-dist-problems.html#summary",
+    "href": "posts/solve-normal-dist-problems.html#summary",
+    "title": "Understanding Normal Distribution in R",
+    "section": "🧾 Summary",
+    "text": "🧾 Summary\n\n\n\n\n\n\n\n\nTask\nFunction\nExample Code\n\n\n\n\nP(X ≤ x)\npnorm()\npnorm(78, 70, 6)\n\n\nP(X ≥ x)\n1 - pnorm()\n1 - pnorm(140, 120, 10)\n\n\nP(a &lt; X &lt; b)\npnorm(b) - pnorm(a)\npnorm(135, 120, 10) - pnorm(110, 120, 10)\n\n\nFind cutoff for top/bottom %\nqnorm()\nqnorm(0.10, 250, 30)"
   },
   {
     "objectID": "posts/welcome/index.html",

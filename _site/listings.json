@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/solve-normal-dist-problems.html",
       "/posts/which-regression-for-binary.html",
       "/posts/common-definitions.html",
       "/posts/types-of-data.html",
