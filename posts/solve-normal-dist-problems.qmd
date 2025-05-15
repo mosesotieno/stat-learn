@@ -1,0 +1,189 @@
+---
+title: "Understanding Normal Distribution in R"
+author: "Moses"
+date: "2025-05-15"
+format: html
+---
+
+## 📘 Introduction
+
+This tutorial provides a **comprehensive, easy-to-follow guide** on using R to solve problems involving the **normal distribution**. You’ll learn how to:
+
+-   Understand what a normal distribution is
+-   Convert between raw scores and Z-scores
+-   Use `pnorm()` and `qnorm()` functions in R
+-   Find probabilities and percentiles
+-   Apply these tools to real-world scenarios
+
+------------------------------------------------------------------------
+
+## 📊 What is the Normal Distribution?
+
+A normal distribution is a **bell-shaped, symmetric** distribution centered at the mean (μ) and defined by the standard deviation (σ).
+
+### Key Properties:
+
+-   About **68%** of values lie within ±1σ of the mean
+-   About **95%** within ±2σ
+-   About **99.7%** within ±3σ
+
+```{r}
+# Visualizing a standard normal distribution
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+plot(x, y, type = "l", lwd = 2, col = "blue",
+     main = "Standard Normal Distribution",
+     xlab = "Z-score", ylab = "Density")
+abline(v = 0, col = "black")
+abline(v = c(-1, 1), col = "gray", lty = 2)
+abline(v = c(-2, 2), col = "gray", lty = 2)
+abline(v = c(-3, 3), col = "gray", lty = 2)
+```
+
+------------------------------------------------------------------------
+
+## 🧠 Z-Scores
+
+A **Z-score** tells us how many standard deviations a value is from the mean:
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+-   Positive z → above the mean
+-   Negative z → below the mean
+
+------------------------------------------------------------------------
+
+## 📈 Using `pnorm()` in R
+
+`pnorm()` gives the **probability to the left** of a given value:
+
+``` r
+pnorm(q, mean = μ, sd = σ, lower.tail = TRUE)
+```
+
+### Examples:
+
+#### 1. P(X \< 78), where μ = 70, σ = 6
+
+```{r}
+pnorm(78, mean = 70, sd = 6)  # ≈ 0.9082
+```
+
+#### 2. P(X \> 140), where μ = 120, σ = 10
+
+```{r}
+1 - pnorm(140, mean = 120, sd = 10)  # ≈ 0.0228
+```
+
+#### 3. P(110 \< X \< 135), μ = 120, σ = 10
+
+```{r}
+pnorm(135, 120, 10) - pnorm(110, 120, 10)  # ≈ 0.7745
+```
+
+------------------------------------------------------------------------
+
+## 🔁 Using `qnorm()` in R
+
+`qnorm()` gives the **cutoff value (X)** for a given cumulative probability:
+
+``` r
+qnorm(p, mean = μ, sd = σ, lower.tail = TRUE)
+```
+
+### Examples:
+
+#### 1. What score corresponds to the 90th percentile (μ = 500, σ = 100)?
+
+```{r}
+qnorm(0.9, mean = 500, sd = 100)  # ≈ 628.16
+```
+
+#### 2. What is the cutoff for the fastest 10% of reaction times (μ = 250, σ = 30)?
+
+```{r}
+qnorm(0.10, mean = 250, sd = 30)  # ≈ 211.55
+```
+
+------------------------------------------------------------------------
+
+## 🧪 Practice Problems with Solutions and Visualizations
+
+### Problem 1: Proportion below a score
+
+A test has μ = 70, σ = 6. What proportion scores below 78?
+
+```{r, eval=FALSE}
+#| label: show-answer-1
+#| code-fold: true
+#| code-summary: "Show Answer"
+#| output: folded
+#| output-summary: "See Output"
+
+pnorm(78, 70, 6)  # ≈ 0.9082
+
+# Visualize
+curve(dnorm(x, mean = 70, sd = 6), from = 40, to = 100, lwd = 2, col = "blue",
+      ylab = "Density", main = "P(X < 78), μ = 70, σ = 6")
+polygon(c(40, seq(40, 78, length.out=100), 78),
+        c(0, dnorm(seq(40, 78, length.out=100), 70, 6), 0),
+        col = "skyblue")
+```
+
+### Problem 2: Between two scores
+
+Systolic BP: μ = 120, σ = 10. Find the proportion between 110 and 135.
+
+```{r, eval=FALSE}
+#| label: show-answer-2
+#| code-fold: true
+#| code-summary: "Show Answer"
+#| output: folded
+#| output-summary: "See Output"
+
+pnorm(135, 120, 10) - pnorm(110, 120, 10)  # ≈ 0.7745
+
+# Visualize
+curve(dnorm(x, mean = 120, sd = 10), from = 80, to = 160, lwd = 2, col = "blue",
+      ylab = "Density", main = "P(110 < X < 135), μ = 120, σ = 10")
+polygon(c(110, seq(110, 135, length.out=100), 135),
+        c(0, dnorm(seq(110, 135, length.out=100), 120, 10), 0),
+        col = "skyblue")
+```
+
+### Problem 3: Fastest 10% (lowest tail)
+
+Find the score that cuts off the fastest 10% for a test with μ = 250, σ = 30.
+
+```{r, eval=FALSE}
+#| label: show-answer-3
+#| code-fold: true
+#| code-summary: "Show Answer"
+#| output: show
+#| output-summary: "See Output"
+
+qnorm(0.10, 250, 30)  # ≈ 211.55
+
+# Visualize
+curve(dnorm(x, mean = 250, sd = 30), from = 150, to = 350, lwd = 2, col = "blue",
+      ylab = "Density", main = "Fastest 10% (X < 211.55), μ = 250, σ = 30")
+polygon(c(150, seq(150, 211.55, length.out=100), 211.55),
+        c(0, dnorm(seq(150, 211.55, length.out=100), 250, 30), 0),
+        col = "skyblue")
+```
+
+------------------------------------------------------------------------
+
+## 🧾 Summary
+
+| Task | Function | Example Code |
+|------------------------|------------------------|------------------------|
+| P(X ≤ x) | `pnorm()` | `pnorm(78, 70, 6)` |
+| P(X ≥ x) | `1 - pnorm()` | `1 - pnorm(140, 120, 10)` |
+| P(a \< X \< b) | `pnorm(b) - pnorm(a)` | `pnorm(135, 120, 10) - pnorm(110, 120, 10)` |
+| Find cutoff for top/bottom % | `qnorm()` | `qnorm(0.10, 250, 30)` |
+
+------------------------------------------------------------------------
