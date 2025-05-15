@@ -2,7 +2,9 @@
 title: "Understanding Normal Distribution in R"
 author: "Moses"
 date: "2025-05-15"
+categories: [statistics]
 format: html
+image: "../norm-dist.png"
 ---
 
 ## 📘 Introduction
